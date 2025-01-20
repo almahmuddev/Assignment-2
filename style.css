@@ -3,7 +3,254 @@
 *{
     font-family: Quicksand;
 }
+:root{
+    --orange-color:#FEA301;
+    --sky-blue:#01ACFD;
+    --black:#111111;
+
+}
 header{
+    margin: 1.25rem 8.75rem;
     display: flex;
     justify-content: space-around;
+}
+.logo{
+    display: flex;
+}
+.logo img{
+    width: 100%;
+    margin-right: .7rem;
+}
+.logo h4{
+    color: #111111;
+    font-size: 2rem;
+    font-weight: bold;
+    margin: auto 0;
+}
+.navbar{
+    margin: 1rem 11.6rem;
+}
+.navbar ul{
+    display: flex;
+}
+.navbar i{
+    /* visibility: hidden; */
+    display: none;
+}
+.navbar li{
+    color: rgb(2, 255, 255);
+    font-size: 1.25rem;
+    font-weight: 500;
+    margin-right: 2rem;
+    list-style: none;
+}
+.navbar li:nth-child(1) {
+    color: var(--orange-color);
+}
+.navbar li:nth-child(2) {
+    color: var(--sky-blue);
+}
+.navbar li:nth-child(3) {
+    color: #05D4DF;
+}
+.navbar li:nth-child(4) {
+    color: #5D58EF;
+}
+.header-btn button{
+    margin: 1rem 0;
+    padding: .8rem 3.75rem;
+    color: #ffffff;
+    background-color: #FEA301;
+    font-size: 1.25rem;
+    font-weight: 600;
+    line-height: 1.8rem;
+    border: none;
+    border-radius: 12px;
+}
+
+             /* banner design */
+
+
+.banner{
+    margin: 0 8.75rem;
+    display: flex;
+    gap: 3rem;
+}
+.banner-content{
+    padding: 7.625rem 0;
+}
+.banner h2{
+    font-size: 3.5rem;
+    font-weight: bold;
+    color: var(--black);
+    margin-bottom: 1.5rem;
+}
+.one{
+    color: var(--orange-color);
+}
+.two{
+    color: var(--sky-blue);
+}
+.banner-content p{
+    font-size: 1.25rem;
+    color: var(--black);
+    margin-bottom: 1.5rem;
+}
+/* .banner-img img{
+    width: 100%;
+} */
+.banner-content button{
+    margin: 1rem 0;
+    padding: .8rem 2.93rem;
+    color: #ffffff;
+    background-color: var(--black);
+    font-size: 1.25rem;
+    font-weight: bold;
+    line-height: 1.8rem;
+    border: none;
+    border-radius: 12px;
+}
+.banner-content button:hover{
+    color: var(--black);
+    background-color: #ffffff;
+    border: 2px solid var(--black);
+}
+.curriculum{
+    background-image: url(assets/bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.curriculum-box{
+    margin: 5rem 8.75rem;
+    display: flex;
+    flex: 1;
+    gap: 1.75rem;
+}
+.curriculum h3{
+    text-align: center;
+    color: var(--black);
+    font-size: 2.95rem;
+    /* margin-top: 3.75rem; */
+}
+.box-1{
+    background: linear-gradient(180deg, #DEF5FF 10%, #ffffff 70%);
+    border-radius: 18px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+.box-2{
+    background: linear-gradient(180deg, #FFF4DC 10%, #ffffff 70%);
+    border-radius: 18px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+.box-3{
+    background: linear-gradient(180deg, #F2E8FF 10%, #ffffff 70%);
+    border-radius: 18px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+.box-1 img, .box-2 img, .box-3 img{
+    padding: 3.25rem 7.18rem 3.25rem 8.18rem;
+}
+.box-1 h5, .box-2 h5, .box-3 h5{
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #202020;
+    text-align: center;
+}
+.box-1 p, .box-2 p, .box-3 p{
+    font-size: 1rem;
+    color: #808080;
+    font-weight: 500;
+    padding: 0 2.5rem;
+    text-align: center;
+    line-height: 1.7rem;
+}
+.box-1 button{
+    border: none;
+    background-color: transparent;
+    justify-content: center;
+    width: 100%;
+    text-align: center;
+    margin-top:1rem;
+    color: #64C8FF;
+    font-size: 1rem;
+    font-weight: bold;
+    line-height: 1.7rem;
+}
+.box-2 button{
+    border: none;
+    background-color: transparent;
+    justify-content: center;
+    width: 100%;
+    text-align: center;
+    margin-top:1rem;
+    color: #F0AA00;
+    font-size: 1rem;
+    font-weight: bold;
+    line-height: 1.7rem;
+}
+.box-3 button{
+    border: none;
+    background-color: transparent;
+    justify-content: center;
+    width: 100%;
+    text-align: center;
+    margin-top:1rem;
+    color: #8700FF;
+    font-size: 1rem;
+    font-weight: bold;
+    line-height: 1.7rem;
+}
+
+
+
+
+      /* responcive   responcive    responcive  */
+
+
+
+@media screen and (max-width:576px) {
+    header{
+        border-bottom: 1px solid var(--orange-color);
+        padding: .75rem 1rem;
+        margin: 0;
+        justify-content: space-between;
+    }
+    .logo h4, .navbar ul, .header-btn{
+        display: none;
+    }
+    .navbar i{
+        /* visibility: visible; */
+        display: block;
+    }
+    .logo img{
+        margin: 0;
+    }
+
+          /* banner responcive */
+  
+
+    .banner{
+    margin: .5rem 1rem 0 1rem;
+    flex-direction: column-reverse;
+    gap: 3rem;
+    }
+    .banner-content{
+        padding: 1.2rem .5rem 0 .5rem;
+        text-align: center;
+    }
+    .banner h3{
+        font-size: 2rem;
+    }
+    .banner-content p{
+        font-size: .875rem;
+    }
+    .banner-content button{
+        font-size: 1rem;
+        padding: .6rem 1.5rem;
+    }
+    .banner-img{ padding: 1.2rem .5rem 0 .5rem;  
+    }
+    .banner-img img{
+        width: 100%;
+    }
 }
