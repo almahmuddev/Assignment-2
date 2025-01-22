@@ -281,9 +281,9 @@ header{
     color: #000000;
     padding: 3.5rem  3.5rem 0 3.5rem;
 }
-.story-content button{
+.story-2 button{
     position: inherit;
-    bottom: 37%;
+    bottom: 8%;
     left: 15%;
     font-size: 1rem;
     font-weight: 500;
@@ -294,9 +294,12 @@ header{
     border: none;
     border-radius: 47px;
 }
-/* .story-content button:nth-child(2) {
-    background-color: #8700FF;
+/* .story-2 button:nth-child(2) {
+    background-color: #8700FF !important;
 } */
+.change{
+    background-color: #8700FF !important;
+}
 
 .stories-btn{
     font-size: 1.25rem;
@@ -396,7 +399,7 @@ footer{
     .banner{
         flex-direction: column-reverse;
         margin: .5rem 1rem 0 1rem;
-        gap: 3rem;
+        gap: 1.25rem;
     }
     .banner-content{
         text-align: center;
@@ -406,14 +409,20 @@ footer{
         font-size: 2rem;
     }
     .banner-content p{
-        font-size: .875rem;
+        font-size: .9rem;
     }
     .banner-content button{
         font-size: 1rem;
-        padding: .6rem 1.5rem;
+        padding: .5rem 1.5rem;
+        border: 2px solid transparent;
+    }
+    .banner-content button:hover{
+        color: var(--black);
+        background-color: transparent;
+        border: 2px solid var(--black);
     }
     .banner-img{
-        padding: 1.2rem .5rem  0 .5rem;  
+        padding: 1.2rem .5rem 0 .5rem;  
     }
     .banner-img img{
         width: 100%;
@@ -424,7 +433,7 @@ footer{
 
     .curriculum h3, .stories h3{
         font-size: 1.625rem;
-        padding-top: 2.5rem;
+        padding: 2.5rem 0 .5rem 0;
     }
     .curriculum-box{
         padding: 1.25rem 1rem;
@@ -433,19 +442,23 @@ footer{
         gap: 1rem;
     }
     .box-1 img, .box-2 img, .box-3 img{
-        padding: 2.25rem 0 1.75rem 14rem;
+        width: 150px;
+        margin: auto;
+        display: block;
+        padding: 2remrem auto;
     }
     .box-1 h5, .box-2 h5, .box-3 h5{
-        font-size: 1.1rem;
+        font-size: 1.25rem;
     }
     .box-1 p, .box-2 p, .box-3 p{
         font-size: .8rem;
         padding: 1.4rem 5rem 0 5rem;
         line-height: 1.3rem;
+        margin-bottom: 1rem;
     }
     .box-3 button, .box-1 button, .box-2 button{
         font-size: .8rem;
-        margin-bottom:2rem;
+        margin-bottom:2.5rem;
     }
 
            /* stories section startss */
@@ -453,8 +466,7 @@ footer{
 
     .stories-box{
         display: flex;
-        /* flex: 1; */
-        padding: 1.5rem 1rem;
+        padding: 1.7rem 1rem;
     }
     .story-1{
         display: none;
@@ -475,11 +487,20 @@ footer{
         font-size: .75rem;
         line-height: 1.15rem;
         padding: 1.3rem 2rem;
-    }      
+    } 
+    .story-2 button{
+        position: inherit;
+        font-size: .75rem;
+        line-height: 1rem;
+        padding: .45rem .9rem;
+        background-color: #8700FF;
+    }
+    .btn-one{
+        background-color: #95B226 !important;
+    }
+
     .stories-btn{
         font-size: 1rem;
-        margin-bottom: 2.5rem;
-        padding: .55rem 2.5rem;
         color: #ffffff;
         background-color: var(--black);
     } 
@@ -488,4 +509,34 @@ footer{
         background-color: #ffffff;
         border: 2px solid var(--black);
     }
+    .footer-content{
+        flex-direction: column;
+        padding: 4rem 1.5rem 4rem 1.1rem;
+    }
+    .child h4{
+        padding-top: .75rem;
+        font-size: 2rem;
+        line-height: 2rem;
+    }
+    .content-1{
+        width: 100%;
+    }
+    .content-1 p{
+        font-size: 1rem;
+        padding: 1rem 1rem 1rem .5rem;
+        line-height: 1.5rem;
+    }
+    .content-2 h5, .content-3 h4{
+        font-size: 1.3rem;
+        padding-left: .5rem;
+    }
+    .content-2 a{
+        font-size: 1rem;
+        font-weight: 500;
+        padding-left: .5rem;
+    }
+    .footer-icons img{
+        padding: 0 11px 0 8px;
+    }
+    
 }
