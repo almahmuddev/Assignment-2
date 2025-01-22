@@ -23,10 +23,10 @@ header{
     margin-right: .7rem;
 }
 .logo h4{
-    color: #111111;
     font-size: 2rem;
     font-weight: bold;
     margin: auto 0;
+    color: #111111;
 }
 .navbar{
     margin: 1rem 11.6rem;
@@ -34,16 +34,12 @@ header{
 .navbar ul{
     display: flex;
 }
-.header-btn i{
-    /* visibility: hidden; */
-    display: none;
-}
 .navbar li{
-    color: rgb(2, 255, 255);
+    list-style: none;
     font-size: 1.25rem;
     font-weight: 500;
+    color: rgb(2, 255, 255);
     margin-right: 2rem;
-    list-style: none;
 }
 .navbar li:nth-child(1) {
     color: var(--orange-color);
@@ -58,7 +54,7 @@ header{
     color: #5D58EF;
 }
 .header-btn button{
-    margin: 1rem 0;
+    /* margin: .5rem 0; */
     padding: .8rem 3.75rem;
     color: #ffffff;
     background-color: #FEA301;
@@ -67,6 +63,11 @@ header{
     line-height: 1.8rem;
     border: none;
     border-radius: 12px;
+}
+.hamburger-menu{
+    display: none;
+    font-size: 2rem;
+    margin: 1rem .5rem;
 }
 
              /* banner design */
@@ -94,18 +95,15 @@ header{
 }
 .banner-content p{
     font-size: 1.25rem;
-    color: var(--black);
     margin-bottom: 1.5rem;
+    color: var(--black);
 }
-/* .banner-img img{
-    width: 100%;
-} */
 .banner-content button{
-    margin: 1rem 0;
-    padding: .8rem 2.93rem;
     font-size: 1.25rem;
     font-weight: bold;
     line-height: 1.8rem;
+    margin: 1rem 0;
+    padding: .8rem 2.93rem;
     color: #ffffff;
     background-color: var(--black);
     border: none;
@@ -116,6 +114,10 @@ header{
     background-color: #ffffff;
     border: 2px solid var(--black);
 }
+
+          /* curriculum section design */
+
+
 .curriculum{
     background-image: url(assets/bg.png);
     background-repeat: no-repeat;
@@ -150,7 +152,7 @@ header{
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
 }
 .box-1 img, .box-2 img, .box-3 img{
-    padding: 3.25rem 7.18rem 3.25rem 8.18rem;
+    padding: 3.25rem 7.18rem 2.5rem 8.18rem;
 }
 .box-1 h5, .box-2 h5, .box-3 h5{
     font-size: 1.5rem;
@@ -160,57 +162,91 @@ header{
 }
 .box-1 p, .box-2 p, .box-3 p{
     font-size: 1rem;
-    color: #808080;
     font-weight: 500;
-    padding: 0 2.5rem;
+    padding: 2rem 2.5rem 0 0;
+    color: #808080;
     text-align: center;
     line-height: 1.7rem;
 }
 .box-1 button{
-    border: none;
-    background-color: transparent;
-    justify-content: center;
     width: 100%;
-    text-align: center;
-    margin-top:1rem;
-    color: #64C8FF;
     font-size: 1rem;
     font-weight: bold;
     line-height: 1.7rem;
+    padding:1rem 0 3rem 0;
+    color: #64C8FF;
+    background-color: transparent;
+    border: none;
 }
 .box-2 button{
-    border: none;
-    background-color: transparent;
-    justify-content: center;
     width: 100%;
-    text-align: center;
-    margin-top:1rem;
-    color: #F0AA00;
     font-size: 1rem;
     font-weight: bold;
     line-height: 1.7rem;
+    margin-top:1rem;
+    padding:1rem 0 3rem 0;
+    color: #F0AA00;
+    background-color: transparent;
+    border: none;
 }
 .box-3 button{
-    border: none;
-    background-color: transparent;
-    justify-content: center;
     width: 100%;
-    text-align: center;
-    margin-top:1rem;
-    color: #8700FF;
     font-size: 1rem;
     font-weight: bold;
     line-height: 1.7rem;
+    margin-top:1rem;
+    padding:1rem 0 3rem 0;
+    color: #8700FF;
+    background-color: transparent;
+    border: none; 
 }
-/* .icons{
+
+         /* icons section design */
+
+
+.icons{
+    display: block;
     text-align: center;
-    background-color: var(--orange-color);
+    margin-bottom: 1.5rem;
+
+}
+.icons a{
+    font-size: 1.9rem;
+    padding: 15px 27px;
+    margin-right: 1rem;
     color: #ffffff;
-    font-size: 1.5rem;
-} */
+    background-color: var(--orange-color);
+    border: 2px solid transparent;
+    border-radius: 45px;
+}
+.icons a:hover{
+        color: var(--orange-color);
+    background-color: #ffffff;
+    border: 2px solid var(--orange-color);
+    border-radius: 45px;
+}
+
+        /* marquee section */
+
+.marq{
+    margin: 5rem 0;
+    font-size: 1.75rem;
+    font-weight: 700;
+    color: var(--orange-color);
+    text-shadow:0 0 1px #000000;
+}
+span{
+    font-size: 2.2rem;
+    font-weight: bold;
+    color: var(--black);
+}
+.color{
+    color: #621940;
+}
 
 
            /* stories design */
+
 
 .stories{
     background-image: url(assets/bg.png);   
@@ -385,15 +421,11 @@ footer{
     .logo h4, .navbar ul, .header-btn{
         display: none;
     }
-    .header-btn i{
-        /* visibility: visible; */
+    .hamburger-menu{
         display: block;
     }
-    .logo img{
-        margin: 0;
-    }
 
-          /* banner responcive */
+          /* banner section */
   
 
     .banner{
@@ -409,7 +441,9 @@ footer{
         font-size: 2rem;
     }
     .banner-content p{
-        font-size: .9rem;
+        font-size: .95rem;
+        line-height: 1.65rem;
+        padding: 0 1rem;
     }
     .banner-content button{
         font-size: 1rem;
@@ -428,7 +462,7 @@ footer{
         width: 100%;
     }
 
-             /* curriculum section starts */
+             /* curriculum section  */
 
 
     .curriculum h3, .stories h3{
@@ -439,7 +473,7 @@ footer{
         padding: 1.25rem 1rem;
         flex-direction: column;
         flex: 1;
-        gap: 1rem;
+        gap: 1.25rem;
     }
     .box-1 img, .box-2 img, .box-3 img{
         width: 150px;
@@ -458,7 +492,26 @@ footer{
     }
     .box-3 button, .box-1 button, .box-2 button{
         font-size: .8rem;
-        margin-bottom:2.5rem;
+    }
+
+
+           /* icons section */
+
+    .icons{
+        display: none;
+    }
+
+              /* marquee section */
+
+    .marq{
+        margin: 4.5rem 0 1.5rem 0;
+        font-size: 1.25rem;
+        font-weight: 700;
+        color: var(--orange-color);
+        text-shadow:0 0 1px #434141;
+    }
+    span{
+        font-size: 1.5rem;
     }
 
            /* stories section startss */
@@ -501,6 +554,7 @@ footer{
 
     .stories-btn{
         font-size: 1rem;
+        padding: .5rem 2.5rem;
         color: #ffffff;
         background-color: var(--black);
     } 
@@ -509,6 +563,11 @@ footer{
         background-color: #ffffff;
         border: 2px solid var(--black);
     }
+
+
+        /* footer section */
+
+
     .footer-content{
         flex-direction: column;
         padding: 4rem 1.5rem 4rem 1.1rem;
